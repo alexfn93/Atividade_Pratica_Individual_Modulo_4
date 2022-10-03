@@ -1,0 +1,354 @@
+
+/*Aqui fiz o design do template do carrossel no site na parte da header*/
+  .carousel-item {
+    height: 30rem;
+    background:#000;
+    color: white;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding-bottom: 50px;
+  }
+
+  .overlay-image {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+
+/*Aqui estou definido o tamanho da logo e das imagens dos cards na parte do sections*/
+
+#foto1 {
+  height: 115px;
+  width: auto;
+}
+
+#foto2 {
+  height: 350px;
+}
+
+#foto3 {
+  height: 350px;
+}
+
+
+/*Aqui estou estilizando o rodapé do site*/
+
+.rodape> h1 {
+   text-align: center;
+   color:white ;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 40px;
+}
+
+.contato{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;    
+}
+
+#conecte-se {
+  text-align: center;
+  color: white;
+}
+
+#collapsibleNavbar1{
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item1 {
+  display: inline;
+  align-items: center;
+  text-decoration: none;
+  
+}
+
+#pagamento {
+  text-align: center;
+  color:white ;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+}
+
+#img_pagto {
+   
+  justify-content: center;
+  width: 50%;
+}
+
+#copyright {
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+/*Aqui estou estilizando a pagina do site "Sobre nós"*/
+
+/*Header*/
+
+#topo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/avião.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 20px;
+  height: 500px;
+  opacity: 0.9;
+}
+
+#texto1 {
+  text-align: center;
+  color: darkorange;
+  margin-top: 2em;
+}
+
+#texto2 {
+  font-size: 18px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+/*Section*/
+
+#meio1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/SodaPDF-converted-LV_economic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 20px;
+  height: 50em;
+  width: 100%;
+  opacity: 0.9;
+}
+
+#meio2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/pai\ e\ filho\ felizes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0.9;
+  width: auto;
+}
+
+#texto3 {
+  text-align: center;
+  color: rgb(252, 235, 0);
+  margin-top: 10em;
+}
+
+
+#texto4 {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/*Aqui estou estilizando a pagina do site "Passagens"*/
+
+:root {
+  --color-text: #F1F1F1;
+  --color-subtitle: #f7f5f5;
+  --color-highlight: #e2792d;
+  --color-button: #4343e9;
+}
+
+
+
+main {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/imagem1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  height:660px;
+}
+
+.top-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.top-main h3 {
+  padding-top: 30px;
+  color: var(--color-subtitle);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.title h3{
+  display: flex;
+  margin: 0 auto;
+  max-width: 65%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #feffff;
+}
+
+.bottom-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.search {
+  background-color: var(--color-text);
+  opacity: 0.9;
+  border-radius: 15px;
+  width: 80%;
+  padding: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+label {
+  color: #000;
+}
+
+#locations, #hotel, #range {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+  
+}
+
+select {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  padding: 2px;
+}
+
+.button-search {
+  padding-left: 20px;
+}
+
+#button-search {
+  padding: 35px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button img {
+  width: 30px;
+  height: 30px;
+}
+
+
+/*Aqui estou estilizando a pagina do site "Cadastre-se"*/
+
+.registration{
+   margin:0;
+   padding-left: 30%;
+   padding-right: 25%;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header img {
+    display: none;
+  }
+
+  header .menu {
+    padding-bottom: 40px;
+  }
+
+  main {
+    padding-top: 100px;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  label {
+    padding-top: 20px;
+  }
+
+  .bottom-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .button-search {
+    padding-top: 20px;
+  }
+
+  #button-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 80px;
+  }
+
+  #button-search::after {
+    content: 'Pesquisar';
+  }
+
+  #button-search img {
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  
+
+}
