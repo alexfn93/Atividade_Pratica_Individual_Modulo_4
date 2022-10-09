@@ -1,6 +1,4 @@
-/**
- * Validação de formulário
- */
+
  
  function validar() {
 	let nome = frmCliente.nome.value
@@ -11,6 +9,7 @@
 	let celular = frmCliente.nome.value
 	let sexo = frmCliente.nome.value
 	let email = frmCliente.nome.value
+	
 	if (nome ===""){
 		alert('Preencha o campo Nome')
 		frmCliente.nome.focus()
@@ -44,5 +43,6 @@
 		frmCliente.email.focus()
 		return false
 	}else {
-		document.forms["frmCliente"].submit()}
+		document.forms["frmCliente"].submit()
 	}
+}

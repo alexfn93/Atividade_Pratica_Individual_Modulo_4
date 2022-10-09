@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office"
+	xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
 <head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers msdt:dt="string">Membros de TIME (toda Recode)</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers>
+<mso:SharedWithUsers msdt:dt="string">217;#Membros de TIME (toda Recode)</mso:SharedWithUsers>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,10 +34,8 @@
 
 <!--Aqui insiro o nome do site dentro da aba da janela do site-->
 <title>Lifestyle Viagens</title>
-
-
-
 </head>
+
 <body>
 	<style>
 body {
@@ -98,20 +104,10 @@ body {
 				i.value += "-";
 
 		}
-
-		var e = textoAjustado;
-		if (isCelular) {
-			const parte1 = textoAtual.slice(0, 5);
-			const parte2 = textoAtual.slice(5, 9);
-			textoAjustado = `${parte1}-${parte2}`
-		} else {
-			const parte1 = textoAtual.slice(0, 4);
-			const parte2 = textoAtual.slice(4, 8);
-			textoAjustado = `${parte1}-${parte2}`
-		}
-
-		telefone.value = textoAjustado;
+		
 	</script>
+
+
 
 	<section class="registration">
 		<h3 style="text-align: center; padding-bottom: 25px;">
@@ -146,22 +142,21 @@ body {
 			<div class="row mb-3">
 				<label for="inputCpf" class="col-sm-3 col-form-label"><strong>CPF</strong></label>
 				<div class="col-sm-10">
-					<input oninput="mascara(this)" type="text" class="form-control"
+					<input oninput="mascara(this)" type="number" class="form-control"
 						id="inputCpf" placeholder="xxx.xxx.xxx-xx" name="cpf">
 				</div>
 			</div>
 			<div class="row mb-3">
 				<label for="inputNaturalidade" class="col-sm-3 col-form-label"><strong>Nacionalidade</strong></label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="inputNaturalidade"
+					<input type="text" class="form-control" id="inputNacionalidade"
 						name="nacionalidade">
 				</div>
 			</div>
 			<div class="row mb-3">
 				<label for="inputCelular" class="col-sm-3 col-form-label"><strong>Celular</strong></label>
 				<div class="col-sm-10">
-					<input onblur="mascaraDeTelefone(this)" type="text"
-						class="form-control" id="inputCelular"
+					<input type="tel" maxlength="15" class="form-control" id="celular"
 						placeholder="+xx (xx) xxxxx-xxxx" name="celular">
 				</div>
 			</div>
@@ -184,13 +179,13 @@ body {
 							gênero</strong></label>
 				</div>
 			</div>
-			<!--</form>-->
+			
 			<hr style="color: black;">
 			<h3 style="text-align: center; color: black;">
 				<strong>Cadastre um e-mail e senha</strong>
 			</h3>
 			<br>
-			<!--<form name="frmClientes" action="inserir" class="row g-3">-->
+			
 			<div class="col-md-6">
 				<label for="inputEmail4" class="form-label"><strong>E-mail</strong></label>
 				<input type="email" class="form-control" id="inputEmail4"
@@ -212,8 +207,8 @@ body {
 				</div>
 			</div>
 			<div class="col-12">
-				<button class="btn btn-primary" value="inserir" type="submit"
-					onclick="validador()">Cadastrar</button>
+				<button class="btn btn-primary" value="inserir" type="button"
+					onclick="validar()">Cadastrar</button>
 			</div>
 		</form>
 		<br>

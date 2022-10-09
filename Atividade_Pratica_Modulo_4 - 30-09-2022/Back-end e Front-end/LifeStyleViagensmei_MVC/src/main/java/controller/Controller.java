@@ -23,14 +23,6 @@ public class Controller extends HttpServlet {
         super();
     }
 
-    /**
-     * protected void doPost(HttpServletRequest request, HttpServletResponse
-     * response) throws ServletException, IOException {
-     * System.out.println("\n \n \n Request post \n \n \n " + request);
-     * this.novoCliente(request,response);
-     * 
-     * }
-     **/
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -119,7 +111,7 @@ public class Controller extends HttpServlet {
         clientes.setEmail(request.getParameter("email"));
         // Alterar o cliente usando o DAO
         dao.alterarCliente(clientes);
-        // Redirecionar para o documentp clientes.jsp (com os dados atualizado)
+        // Redirecionar para o documento clientes.jsp (com os dados atualizado)
         response.sendRedirect("main");
     }
 

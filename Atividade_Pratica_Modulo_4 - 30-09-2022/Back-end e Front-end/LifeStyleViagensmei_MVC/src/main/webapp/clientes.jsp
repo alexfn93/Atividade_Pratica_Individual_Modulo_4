@@ -59,12 +59,19 @@ button {
 	font-size: 15px;
 }
 
-.listClient {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even)
+
+
 </style>
 </head>
 <body>
@@ -106,7 +113,7 @@ button {
 	</nav>
 	<!---Fim do menu-->
 
-	<section class="listClient container mt-3">
+	<div style="overflow-x:auto;">
     <h1>LISTA DE CLIENTES</h1>
 
 		<div class="table-responsive">
@@ -151,8 +158,8 @@ button {
 					<%} %>
 				</tbody>
 			</table>
-			<button style="background-color: blue;"><a href="cadastre-se.html">Novo Cliente</a></button>
 		</div>
-	</section>
+		<button style="background-color: blue;"><a href="cadastre-se.html">Novo Cliente</a></button>
+	</div>
 </body>
 </html>
